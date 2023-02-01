@@ -52,7 +52,7 @@ class ErrorFunction:
         self.update_cache()
         lib.set_magic(int(magic))
         lib.sqrts(self._xs, self._ys)
-        return numpy.abs(numpy.mean((self._standard - self._ys) / self._xs))
+        return numpy.abs(numpy.mean((self._standard - self._ys) / self._standard))
 
     def batch(self, magics: npt.NDArray[numpy.uint64]) -> npt.NDArray[numpy.float64]:
         """Calculate batch error values."""

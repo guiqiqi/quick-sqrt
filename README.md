@@ -10,7 +10,7 @@ make && make run start=0x3fe0000000000000
 
 This starts the gradient descent algorithm and solves for a relatively good "magic constant".
 
-After testing, the absolute error of the number is about 0.013, and the relative error is about 4/100,000.
+After testing, the absolute error of the number is about 0.013, and the relative error is about 2/10,000.
 
 For plot error function and its derivative curve:
 
